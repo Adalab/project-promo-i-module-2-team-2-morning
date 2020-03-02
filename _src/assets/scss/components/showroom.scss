@@ -1,0 +1,31 @@
+.showroom {
+    width: 320px;
+    height: 457px;
+    background-color: #dde9ed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout {
+    width: 240px;
+    height: 329px;
+    background-color: white;
+    box-shadow: 2px 2px 5px #666;
+}
+
+.reset-button {
+    width: 75px;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: #dde9ed;
+    border-radius: 50px;
+    
+
+}
+
+.photo {
+    width: 240px;
+    height: 200px;
+}
