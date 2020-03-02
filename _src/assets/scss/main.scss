@@ -1,6 +1,25 @@
+<<<<<<< HEAD
 @import "./core/_reset";
 @import "./core/_variables";
 @import "./core/_mixins";
 @import "./layout/_header";
 @import "./layout/_index-main";
 @import "./layout/_footer";
+=======
+<<<<<<< HEAD
+@import './core/_reset';
+@import './core/_variables';
+@import './core/_mixins';
+@import './layout/_header';
+@import './layout/_landing-main';
+@import './layout/_footer';
+=======
+@import '../core/_reset';
+@import '../core/_variables';
+@import '../core/_functions';
+@import '../core/_mixins';
+@import '../layout/_header';
+@import '../layout/_landing-main';
+@import '../layout/_footer';
+>>>>>>> variables
+>>>>>>> 53b05ed2004c8a3583f4b3be83de5bf54286220a
