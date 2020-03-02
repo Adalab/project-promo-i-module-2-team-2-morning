@@ -1,11 +1,10 @@
 // home page color palette
 
 $black: black;
-$white: white; // this isthe same color of $textCard
+$white: white;
 $khaki: #f9f4dc;
 $orange: #e17334;
-// the following 3 colors are the same colors of the user color palette Greenish
-$dark-blue: #114e4e; // this is the same color of $textCard
+$dark-blue: #114e4e;
 $bright-blue: #438792;
 $bright-green: #a2deaf;
 
@@ -14,21 +13,22 @@ $bright-green: #a2deaf;
 // texts
 $textColor: #54585a;
 $textColor2: #6b6b6b;
-$textColor3: white;
-$textCard: #114e4e;
+$textColor3: $white;
+$textCard: $dark-blue;
 
 // backgrounds
 $backgroundColor1: #f5f5f5;
 $backgroundColor2: #d5d5d5;
 $backgroundFade1: linear-gradient(#bfcdd0, #dde9ed);
 $backgroundFade2: linear-gradient(#f5f5f5, #ffffff);
+$twitter: #00a0f5;
 
 // user color palettes
 
 // user color palette Greenish
-$userPaletteGreenish1: #114e4e;
-$userPaletteGreenish2: #438792;
-$userPaletteGreenish3: #a2deaf;
+$userPaletteGreenish1: $dark-blue;
+$userPaletteGreenish2: $bright-blue;
+$userPaletteGreenish3: $bright-green;
 
 // user color palette Blood
 
