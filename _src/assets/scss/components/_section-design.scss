@@ -1,12 +1,82 @@
 /* SECTION DESIGN */
-.section-design,
+.section-design {
+  margin: 0 15px;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 20px;
+  &__title {
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #54585a;
+    font-weight: 600;
+  }
+  &__colors {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    &__subtitle {
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #54585a;
+    }
+    &__form {
+      &__palette01 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        &--list {
+          display: flex;
+          margin-left: 10px;
+          list-style: none;
+          .list--color {
+            width: 30px;
+            height: 25px;
+            &:first-child {
+              background-color: #114e4e;
+            }
+            &:nth-child(2) {
+              background-color: #438792;
+            }
+            &:last-child {
+              background-color: #a2deaf;
+            }
+          }
+        }
+      }
+      &__palette02 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        &--list {
+          display: flex;
+          margin-left: 10px;
+          list-style: none;
+          .list--color {
+            width: 30px;
+            height: 25px;
+            &:first-child {
+              background-color: #114e4e;
+            }
+            &:nth-child(2) {
+              background-color: #438792;
+            }
+            &:last-child {
+              background-color: #a2deaf;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .section-fill,
 .section-share {
   margin: 0 15px;
   border-bottom: 1px solid #d8d8d8;
   padding-bottom: 20px;
 }
-.section-design__title,
+
 .section-fill__title,
 .section-share__title {
   /* realizar un mixins para los titulos de secciones */
@@ -16,32 +86,7 @@
   color: #54585a;
   font-weight: 600;
 }
-.arrow-icon {
-  text-align: right;
-}
-.section-design__colors {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 10px;
 
-  /* display: none; */
-}
-.section-design__colors__subtitle {
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #54585a;
-}
-.section-design__form__color--palette01 {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.section-design__form__color--list {
-  display: flex;
-  margin-left: 10px;
-  list-style: none;
-}
 /* LISTA DE COLORES */
 .list--color {
   width: 30px;
