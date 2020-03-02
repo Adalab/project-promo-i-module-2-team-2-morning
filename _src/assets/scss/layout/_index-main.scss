@@ -8,18 +8,42 @@
   text-align: center;
   &__image {
     padding-top: 21%;
+    width: 250px;
   }
   &__title {
     padding-top: 8%;
   }
   &__list {
+    margin-top: 4%;
     width: 268px;
-    height: 73.8px;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+  }
+  &__button {
+    margin-top: 9%;
+  }
+}
+
+// TABLET
+
+@media all and (min-width: 768px) {
+  .index-main {
+    height: 94vh;
+    &__image {
+      padding-top: 37%;
+    }
+    &__title {
+      padding-top: 3%;
+    }
+    &__list {
+      margin-top: 3%;
+    }
+    &__button {
+      padding-top: 20%;
+    }
   }
 }
 
