@@ -1,0 +1,32 @@
+.index-main {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &__image {
+    padding-top: 21%;
+  }
+  &__title {
+    padding-top: 8%;
+  }
+  &__list {
+    width: 268px;
+    height: 73.8px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+// border cajas
+.index-main {
+  border: solid 2px red;
+  &__list {
+    border: solid 2px green;
+  }
+}
