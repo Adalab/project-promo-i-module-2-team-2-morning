@@ -1,0 +1,53 @@
+// home page color palette
+
+$black: black;
+$white: white; // this isthe same color of $textCard
+$khaki: #f9f4dc;
+$orange: #e17334;
+// the following 3 colors are the same colors of the user color palette Greenish
+$dark-blue: #114e4e; // this is the same color of $textCard
+$bright-blue: #438792;
+$bright-green: #a2deaf;
+
+// color items
+
+// texts
+$textColor: #54585a;
+$textColor2: #6b6b6b;
+$textColor3: white;
+$textCard: #114e4e;
+
+// backgrounds
+$backgroundColor1: #f5f5f5;
+$backgroundColor2: #d5d5d5;
+$backgroundFade1: linear-gradient(#bfcdd0, #dde9ed);
+$backgroundFade2: linear-gradient(#f5f5f5, #ffffff);
+
+// user color palettes
+
+// user color palette Greenish
+$userPaletteGreenish1: #114e4e;
+$userPaletteGreenish2: #438792;
+$userPaletteGreenish3: #a2deaf;
+
+// user color palette Blood
+
+$userPaletteBlood1: #420101;
+$userPaletteBlood2: #bd1010;
+$userPaletteBlood3: #e95626;
+
+// user color palette Office
+$userPaletteOffice1: #3e5b65;
+$userPaletteOffice2: #eab052;
+$userPaletteOffice3: #a0c0cf;
+
+// fonts
+
+$textFont1: 'OpenSans, regular 400';
+$textFont2: 'OpenSans, semibold 600';
+$textFont3: 'OpenSans, bold 700';
+
+$cardFont1: 'Montserrat, regular 400';
+$cardFont2: 'Montserrat, bold 700';
+
+$specialFont: 'Merriweather, black 900';
