@@ -1,64 +1,49 @@
-<section class="section-design">
-  <h2 class="section-design__title">
-    diseña
-  </h2>
-  <div class="section-design__colors">
-    <h3 class="section-design__colors__subtitle">
-      colores
-    </h3>
-    <form class="section-design__colors__form">
-      <label for="colors" class="section-design__colors__form__palette01">
-        <input type="radio" id="colors" name="colors" value="" />
-        <ul class="section-design__colors__form__palette01--list">
-          <li class="list--color"></li>
-          <li class="list--color"></li>
-          <li class="list--color"></li>
-        </ul>
-      </label>
-      <label for="colors" class="section-design__form__color-__palette01">
-        <input type="radio" id="colors" name="colors" value="" />
-        <ul class="section-design__colors__form__palette01--list">
-          <li class="list--color"></li>
-          <li class="list--color"></li>
-          <li class="list--color"></li>
-        </ul>
-      </label>
-      <label for="colors" class="section-design__form__color__palette01">
-        <input type="radio" id="colors" name="colors" value="3" />
-        <ul class="section-design__colors__form__palette01--list">
-          <li class="list--color"></li>
-          <li class="list--color"></li>
-          <li class="list--color"></li>
-        </ul>
-      </label>
+<section class="section-page">
+  <div class="section-page__design">
+    <h2 class="section-page__design__title">
+      diseña
+    </h2>
+    <div class="section-page__design__colors">
+      <h3 class="section-page__design__colors__subtitle">
+        colores
+      </h3>
+      <form class="section-page__design__colors__form">
+        <partial src="_label-color.html" aClass="section-page__design__colors__form__palette01" classList="section-page__design__colors__form__palette01--list"></partial>
+        <partial src="_label-color.html" aClass="section-page__design__colors__form__palette02" classList="section-page__design__colors__form__palette02--list"></partial>
+        <partial src="_label-color.html" aClass="section-page__design__colors__form__palette03" classList="section-page__design__colors__form__palette03--list"></partial>
+      </form>
+    </div>
+  </div>
+  <!-- SECTION RELLENA -->
+  <div class="section-page__fill">
+    <h3 class="section-page__fill__title">rellena</h3>
+    <form class="section-page__fill__form">
+      <label for="name">Nombre completo</label>
+      <input type="text" name="name" id="name" placeholder="Ej: Sally Jill" />
+      <label for="job">Puesto</label>
+      <input type="text" name="job" id="job" placeholder="Ej: Front-end unicorn" />
+      <label for="name">Nombre completo</label>
+      <input type="text" name="name" id="name" placeholder="Ej: Sally Jill" />
+      <label for="img">Imagen de perfil</label>
+      <button type="submit">Añadir imagen</button>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Ej: sally-hill@gmail.com" />
+      <label for="phone">Teléfono</label>
+      <input type="tel" name="phone" id="phone" placeholder="Ej: 555-55-55-55" />
+      <label for="linkendin">Linkendin</label>
+      <input type="text" name="linkendin" id="linkendin" placeholder="Ej: linkendin.com/in/sally.hill@gmail.com" />
+      <label for="github">Github</label>
+      <input type="text" name="github" id="github" placeholder="Ej: @sally-hill" />
     </form>
   </div>
-</section>
-<!-- SECTION RELLENA -->
-<section class="section-fill">
-  <h3 class="section-fill__title">rellena</h3>
-  <form class="section-fill__form">
-    <label for="name">Nombre completo</label>
-    <input type="text" name="name" id="name" placeholder="Ej: Sally Jill" />
-    <label for="job">Puesto</label>
-    <input type="text" name="job" id="job" placeholder="Ej: Front-end unicorn" />
-    <label for="name">Nombre completo</label>
-    <input type="text" name="name" id="name" placeholder="Ej: Sally Jill" />
-    <label for="img">Imagen de perfil</label>
-    <button type="submit">Añadir imagen</button>
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" placeholder="Ej: sally-hill@gmail.com" />
-    <label for="phone">Teléfono</label>
-    <input type="tel" name="phone" id="phone" placeholder="Ej: 555-55-55-55" />
-    <label for="linkendin">Linkendin</label>
-    <input type="text" name="linkendin" id="linkendin" placeholder="Ej: linkendin.com/in/sally.hill@gmail.com" />
-    <label for="github">Github</label>
-    <input type="text" name="github" id="github" placeholder="Ej: @sally-hill" />
-  </form>
-</section>
-<section class="section-share">
-  <h3 class="section-share__title">comparte</h3>
-  <form class="section-share__form">
-    <button type="submit">crear tarjeta</button>
-  </form>
+  <div class="section-page__share">
+    <h3 class="section-page__share__title">comparte</h3>
+    <form class="section-page__share__form">
+      <button type="submit">crear tarjeta</button>
+    </form>
+  </div>
+  <div class="section-page__card-create">
+    <h3>La tarjeta ha sido creada</h3>
+    <p><a href="#" target="_blank">https://awesome-profile-card.com?id=A456DF0001</a></p>
+  </div>
 </section>

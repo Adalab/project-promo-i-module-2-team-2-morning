@@ -1,158 +1,174 @@
-/* SECTION DESIGN */
-.section-design {
-  margin: 0 15px;
-  border-bottom: 1px solid #d8d8d8;
-  padding-bottom: 20px;
-  &__title {
-    padding: 10px 0;
-    text-transform: uppercase;
-    font-size: 18px;
-    color: #54585a;
-    font-weight: 600;
+.section-page {
+  padding: 0 15px;
+  @media all and (min-width: 768px) {
+    padding: 0 40px 0 30px;
   }
-  &__colors {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
-    &__subtitle {
+  /* SECTION DESIGN */
+  &__design {
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 20px;
+    &__title {
+      @include titleSectionDesign();
+      padding: 10px 0;
+      color: $textColor;
       text-transform: uppercase;
-      font-size: 14px;
-      color: #54585a;
+    }
+    &__colors {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 10px;
+      &__subtitle {
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: $textColor;
+      }
+      &__form {
+        &__palette01 {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          &--list {
+            display: flex;
+            margin-left: 10px;
+            list-style: none;
+            .list--color {
+              width: 30px;
+              height: 25px;
+              &:first-child {
+                background-color: $userPaletteGreenish1;
+              }
+              &:nth-child(2) {
+                background-color: $userPaletteGreenish2;
+              }
+              &:last-child {
+                background-color: $userPaletteGreenish3;
+              }
+            }
+          }
+        }
+        &__palette02 {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          &--list {
+            display: flex;
+            margin-left: 10px;
+            list-style: none;
+            .list--color {
+              width: 30px;
+              height: 25px;
+              &:first-child {
+                background-color: $userPaletteBlood1;
+              }
+              &:nth-child(2) {
+                background-color: $userPaletteBlood2;
+              }
+              &:last-child {
+                background-color: $userPaletteBlood3;
+              }
+            }
+          }
+        }
+        &__palette03 {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          &--list {
+            display: flex;
+            margin-left: 10px;
+            list-style: none;
+            .list--color {
+              width: 30px;
+              height: 25px;
+              &:first-child {
+                background-color: $userPaletteOffice1;
+              }
+              &:nth-child(2) {
+                background-color: $userPaletteOffice2;
+              }
+              &:last-child {
+                background-color: $userPaletteOffice3;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &__fill {
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 20px;
+    &__title {
+      padding: 10px 0;
+      @include titleSectionDesign();
+      text-transform: uppercase;
+      color: $textColor;
+    }
+    /* SECTION RELLENA */
+    &__form {
+      padding-top: 10px;
+      input {
+        display: block;
+        width: 100%;
+        padding: 6px 9px;
+        margin-bottom: 10px;
+        @include t(14px, 20px);
+        border: 1px solid #a2deaf;
+        &::placeholder {
+          color: #c5c5c5;
+        }
+      }
+      label {
+        display: block;
+        width: 100%;
+        padding: 7px 0px;
+        @include t(14px, 20px);
+        font-family: 'Open Sans', sans-serif;
+        color: #114e4e;
+      }
+      button {
+        border: none;
+        padding: 5px 22px;
+        margin-bottom: 10px;
+        background-color: #e17334;
+        border-radius: 3px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+        color: white;
+        @include t(14px, 20px);
+      }
+    }
+  }
+  /* SECTION SHARE */
+  &__share {
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 20px;
+    &__title {
+      padding: 10px 0;
+      @include titleSectionDesign();
+      text-transform: uppercase;
+      color: $textColor;
     }
     &__form {
-      &__palette01 {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-        &--list {
-          display: flex;
-          margin-left: 10px;
-          list-style: none;
-          .list--color {
-            width: 30px;
-            height: 25px;
-            &:first-child {
-              background-color: #114e4e;
-            }
-            &:nth-child(2) {
-              background-color: #438792;
-            }
-            &:last-child {
-              background-color: #a2deaf;
-            }
-          }
-        }
-      }
-      &__palette02 {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-        &--list {
-          display: flex;
-          margin-left: 10px;
-          list-style: none;
-          .list--color {
-            width: 30px;
-            height: 25px;
-            &:first-child {
-              background-color: #114e4e;
-            }
-            &:nth-child(2) {
-              background-color: #438792;
-            }
-            &:last-child {
-              background-color: #a2deaf;
-            }
-          }
-        }
+      text-align: center;
+      button {
+        border: none;
+        padding: 13px 18px;
+        background-color: #e17334;
+        border-radius: 12px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+        color: white;
+        font-size: 18px;
+        font-weight: 600px;
+        margin: 20px 0;
+        line-height: 20px;
+        text-transform: uppercase;
       }
     }
   }
-}
-
-.section-fill,
-.section-share {
-  margin: 0 15px;
-  border-bottom: 1px solid #d8d8d8;
-  padding-bottom: 20px;
-}
-
-.section-fill__title,
-.section-share__title {
-  /* realizar un mixins para los titulos de secciones */
-  padding: 10px 0;
-  text-transform: uppercase;
-  font-size: 18px;
-  color: #54585a;
-  font-weight: 600;
-}
-
-/* LISTA DE COLORES */
-.list--color {
-  width: 30px;
-  height: 25px;
-}
-.list--color:first-child {
-  background-color: #114e4e;
-}
-.list--color:nth-child(2) {
-  background-color: #438792;
-}
-.list--color:last-child {
-  background-color: #a2deaf;
-}
-
-/* SECTION RELLENA */
-.section-fill__form {
-  padding-top: 10px;
-}
-.section-fill__form input,
-.section-fill__form label {
-  display: block;
-  width: 100%;
-  font-size: 14px;
-  line-height: 20px;
-}
-.section-fill__form label {
-  color: #114e4e;
-  padding: 7px 0px;
-}
-.section-fill__form input {
-  border: 1px solid #a2deaf;
-  padding: 6px 9px;
-  margin-bottom: 10px;
-}
-.section-fill__form input::placeholder {
-  color: #c5c5c5;
-}
-.section-fill__form button {
-  border: none;
-  padding: 5px 22px;
-  background-color: #e17334;
-  border-radius: 3px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-  color: white;
-  font-size: 14px;
-  margin-bottom: 10px;
-  line-height: 20px;
-  cursor: pointer;
-}
-
-/* SECTION SHARE */
-.section-share__form {
-  text-align: center;
-}
-.section-share__form button {
-  border: none;
-  padding: 13px 18px;
-  background-color: #e17334;
-  border-radius: 12px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-  color: white;
-  font-size: 18px;
-  font-weight: 600px;
-  margin: 20px 0;
-  line-height: 20px;
-  cursor: pointer;
-  text-transform: uppercase;
+  &__card-create {
+    text-align: center;
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 20px;
+  }
 }
