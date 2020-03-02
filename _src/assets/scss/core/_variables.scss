@@ -4,6 +4,7 @@ $black: black;
 $white: white;
 $khaki: #f9f4dc;
 $orange: #e17334;
+// the following 3 colors are the same colors of the user color palette Greenish
 $dark-blue: #114e4e;
 $bright-blue: #438792;
 $bright-green: #a2deaf;
@@ -33,4 +34,11 @@ $userPaletteOffice3: #a0c0cf;
 
 // fonts
 
-$regularFont: 'OpenSans';
+$textFont1: 'OpenSans, regular 400';
+$textFont2: 'OpenSans, semibold 600';
+$textFont3: 'OpenSans, bold 700';
+
+$cardFont1: 'Montserrat, regular 400';
+$cardFont2: 'Montserrat, bold 700';
+
+$specialFont: 'Merriweather, black 900';
