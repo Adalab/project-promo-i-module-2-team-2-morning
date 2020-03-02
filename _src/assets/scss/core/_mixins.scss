@@ -1,0 +1,4 @@
+@mixin t($fontSize, $lineHeight) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
