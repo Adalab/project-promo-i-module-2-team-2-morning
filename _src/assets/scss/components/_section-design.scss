@@ -1,5 +1,6 @@
 .section-page {
   padding: 0 15px;
+  width: 50%;
   @media all and (min-width: 768px) {
     padding: 0 40px 0 30px;
   }
@@ -7,12 +8,21 @@
   &__design {
     border-bottom: 1px solid #d8d8d8;
     padding-bottom: 20px;
-    &__title {
-      @include titleSectionDesign();
-      padding: 10px 0;
-      color: $textColor;
-      text-transform: uppercase;
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      &__title {
+        @include titleSectionDesign();
+        padding: 10px 0;
+        color: $textColor;
+        text-transform: uppercase;
+      }
+      button {
+        border: none;
+        background-color: transparent;
+      }
     }
+
     &__colors {
       display: flex;
       justify-content: space-between;
