@@ -1,3 +1,5 @@
+// DISTRIBUTION
+
 .index-main {
   height: 80vh;
   width: 100vw;
@@ -34,6 +36,7 @@
     height: 94vh;
     &__image {
       padding-top: 37%;
+      width: 419px;
     }
     &__title {
       padding-top: 3%;
@@ -42,11 +45,25 @@
       margin-top: 3%;
     }
     &__button {
-      padding-top: 20%;
+      margin-top: 15%;
     }
   }
 }
 
+// STYLES
+.index-main {
+  background-color: $backgroundColor1;
+  &__title {
+    color: $orange;
+    font-size: 19.2px;
+    font-family: $specialFont;
+  }
+  &__content {
+    color: $textCard;
+    font-size: 12.8px;
+    font-family: $textFont1;
+  }
+}
 // border cajas
 .index-main {
   border: solid 2px red;
