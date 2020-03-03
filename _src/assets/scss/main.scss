@@ -1,7 +1,12 @@
 @import './core/_reset';
 @import './core/_variables';
+@import './core/_functions';
 @import './core/_mixins';
 @import './layout/_header';
+<<<<<<< HEAD
 @import './layout/_landing-main';
 @import './components/_showroom';
+=======
+@import './layout/_index-main';
+>>>>>>> cc1d510df3f582baaef42d48ee5136adf26b6900
 @import './layout/_footer';
