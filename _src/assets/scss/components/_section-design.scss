@@ -1,8 +1,8 @@
 .section-page {
   padding: 0 15px;
-  width: 50%;
   @media all and (min-width: 768px) {
     padding: 0 40px 0 30px;
+    width: 50%;
   }
   /* SECTION DESIGN */
   &__design {
@@ -180,5 +180,30 @@
     text-align: center;
     border-bottom: 1px solid #d8d8d8;
     padding-bottom: 20px;
+    &__title {
+      padding-top: 20px;
+      @include titleSectionDesign();
+      color: $textColor;
+    }
+    &__link-card {
+      text-decoration: none;
+      @include t(12px, normal);
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      color: $orange;
+      display: block;
+      margin-top: 5px;
+    }
+    &__rrss-btn {
+      margin: 10px 0 30px 0;
+      @include t(14px, normal);
+      line-height: 20px;
+      padding: 3px 10px;
+      border: none;
+      background-color: $twitter;
+      color: $white;
+      border-radius: 3px;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    }
   }
 }
