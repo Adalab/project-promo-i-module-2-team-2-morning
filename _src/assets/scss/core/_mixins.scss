@@ -2,3 +2,8 @@
   font-size: $fontSize;
   line-height: $lineHeight;
 }
+@mixin titleSectionDesign() {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}

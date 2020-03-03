@@ -23,6 +23,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
   }
   &__button {
     margin-top: 9%;
@@ -69,6 +71,8 @@
   }
   &__text-list {
     font-family: $textFont1;
+    font-size: 12.8px;
+    color: $textColor;
   }
 }
 
