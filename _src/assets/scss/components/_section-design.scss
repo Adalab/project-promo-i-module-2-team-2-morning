@@ -8,7 +8,8 @@
   &__design {
     border-bottom: 1px solid #d8d8d8;
     padding-bottom: 20px;
-    &__content {
+    @import './components/_header-design';
+    /*  &__content {
       display: flex;
       justify-content: space-between;
       &__title {
@@ -17,11 +18,12 @@
         color: $textColor;
         text-transform: uppercase;
       }
-      button {
+      &__btn {
+        font-size: 16px;
         border: none;
         background-color: transparent;
       }
-    }
+    } */
 
     &__colors {
       display: flex;
@@ -106,16 +108,18 @@
       }
     }
   }
+  /* SECTION RELLENA */
   &__fill {
     border-bottom: 1px solid #d8d8d8;
     padding-bottom: 20px;
-    &__title {
+    @import './components/_header-design';
+    /*  &__title {
       padding: 10px 0;
       @include titleSectionDesign();
       text-transform: uppercase;
       color: $textColor;
     }
-    /* SECTION RELLENA */
+ */
     &__form {
       padding-top: 10px;
       input {
@@ -153,12 +157,8 @@
   &__share {
     border-bottom: 1px solid #d8d8d8;
     padding-bottom: 20px;
-    &__title {
-      padding: 10px 0;
-      @include titleSectionDesign();
-      text-transform: uppercase;
-      color: $textColor;
-    }
+    @import './components/_header-design';
+
     &__form {
       text-align: center;
       button {
@@ -198,7 +198,7 @@
       margin: 10px 0 30px 0;
       @include t(14px, normal);
       line-height: 20px;
-      padding: 3px 10px;
+      padding: 5px 15px;
       border: none;
       background-color: $twitter;
       color: $white;

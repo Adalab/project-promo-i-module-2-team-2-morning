@@ -1,0 +1,15 @@
+.section-page__header {
+  display: flex;
+  justify-content: space-between;
+  &__title {
+    @include titleSectionDesign();
+    padding: 10px 0;
+    color: $textColor;
+    text-transform: uppercase;
+  }
+  &__btn {
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+  }
+}
