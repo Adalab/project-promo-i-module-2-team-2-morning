@@ -44,16 +44,15 @@ $userPaletteOffice2: #eab052;
 $userPaletteOffice3: #a0c0cf;
 
 // fonts
-$textFont1: 'OpenSans, regular 400';
-$textFont2: 'OpenSans, semibold 600';
-$textFont3: 'OpenSans, bold 700';
+$textFont: 'OpenSans';
+$cardFont: 'Montserrat';
+$specialFont: 'Merriweather';
 
-$cardFont1: 'Montserrat, regular 400';
-$cardFont2: 'Montserrat, bold 700';
+// font size
 
-$specialFont: 'Merriweather, black 900';
+$defaultFontSize: 16px;
 
 // displays
 
-$display-m: 768px;
-$display-l: 1024px;
+$displayM: 768px;
+$displayL: 1024px;
