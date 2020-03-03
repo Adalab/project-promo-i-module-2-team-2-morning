@@ -9,22 +9,6 @@
     border-bottom: 1px solid #d8d8d8;
     padding-bottom: 20px;
     @import './components/_header-design';
-    /*  &__content {
-      display: flex;
-      justify-content: space-between;
-      &__title {
-        @include titleSectionDesign();
-        padding: 10px 0;
-        color: $textColor;
-        text-transform: uppercase;
-      }
-      &__btn {
-        font-size: 16px;
-        border: none;
-        background-color: transparent;
-      }
-    } */
-
     &__colors {
       display: flex;
       justify-content: space-between;
@@ -113,13 +97,6 @@
     border-bottom: 1px solid #d8d8d8;
     padding-bottom: 20px;
     @import './components/_header-design';
-    /*  &__title {
-      padding: 10px 0;
-      @include titleSectionDesign();
-      text-transform: uppercase;
-      color: $textColor;
-    }
- */
     &__form {
       padding-top: 10px;
       input {
