@@ -40,6 +40,11 @@ $userPaletteOffice2: #eab052;
 $userPaletteOffice3: #a0c0cf;
 
 // fonts
+
+$textFont: 'OpenSans';
+$cardFont: 'Montserrat';
+$specialFont: 'Merriweather';
+
 $textFont1: 'OpenSans, regular 400';
 $textFont2: 'OpenSans, semibold 600';
 $textFont3: 'OpenSans, bold 700';
@@ -51,4 +56,9 @@ $textFont3: 'OpenSans, bold 700';
 $cardFont1: 'Montserrat regular 400';
 $cardFont2: 'Montserrat bold 700';
 
-$specialFont: 'Merriweather', bold 900;
+// font size
+$defaultFontSize: 16px;
+
+// display
+$displayM: 768px;
+$displayL: 1024px;
