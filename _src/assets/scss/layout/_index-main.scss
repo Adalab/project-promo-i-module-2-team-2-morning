@@ -35,7 +35,7 @@
 
 @media all and (min-width: 768px) {
   .index-main {
-    height: 94vh;
+    height: 963px;
     &__image {
       padding-top: 37%;
       width: 419px;
@@ -47,7 +47,7 @@
       margin-top: 3%;
     }
     &__button {
-      margin-top: 15%;
+      margin-top: 20%;
     }
   }
 }
@@ -78,7 +78,7 @@
 
 .fa-object-ungroup,
 .fa-keyboard,
-.fa-share-all {
+.fa-share-alt {
   color: $orange;
 }
 
