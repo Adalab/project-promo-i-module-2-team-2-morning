@@ -26,6 +26,7 @@ $twitter: #00a0f5;
 $resetBorder: $white;
 $formBorder: $brightGreen;
 $landingBorder: $orange;
+$footerBorder: #d8d8d8;
 
 // user color palettes
 
@@ -45,9 +46,9 @@ $userPaletteOffice2: #eab052;
 $userPaletteOffice3: #a0c0cf;
 
 // fonts
-$textFont: 'Open Sans';
-$cardFont: 'Montserrat';
-$specialFont: 'Merriweather';
+$textFont: 'Open Sans', sans-serif;
+$cardFont: 'Montserrat', sans-serif;
+$specialFont: 'Merriweather', sans-serif;
 
 // font size
 $defaultFontSize: 16px;
