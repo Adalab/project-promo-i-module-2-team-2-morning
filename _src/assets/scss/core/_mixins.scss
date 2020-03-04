@@ -1,6 +1,8 @@
-@mixin t($fontSize, $lineHeight) {
+@mixin t($fontSize, $lineHeight, $fontWeight) {
   font-size: $fontSize;
   line-height: $lineHeight;
+  font-weight: $fontWeight;
+  @content;
 }
 
 @mixin titleSectionDesign() {
