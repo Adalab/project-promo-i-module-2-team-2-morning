@@ -74,6 +74,15 @@
     font-size: 12.8px;
     color: $textColor;
   }
+  &__button {
+    text-transform: uppercase;
+    font-family: $textFont;
+    padding: 10px 20px;
+    border-radius: 21px;
+    background-color: $brightBlue;
+    color: $white;
+    border: none;
+  }
 }
 
 .fa-object-ungroup,
