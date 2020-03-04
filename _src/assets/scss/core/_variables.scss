@@ -3,9 +3,9 @@ $black: black;
 $white: white;
 $khaki: #f9f4dc;
 $orange: #e17334;
-$dark-blue: #114e4e;
-$bright-blue: #438792;
-$bright-green: #a2deaf;
+$darkBlue: #114e4e;
+$brightBlue: #438792;
+$brightGreen: #a2deaf;
 
 // color items
 
@@ -21,6 +21,12 @@ $backgroundColor2: #d5d5d5;
 $backgroundFade1: linear-gradient(#bfcdd0, #dde9ed);
 $backgroundFade2: linear-gradient(#f5f5f5, #ffffff);
 $twitter: #00a0f5;
+
+// borders
+$resetBorder: $white;
+$formBorder: $brightGreen;
+$landingBorder: $orange;
+$footerBorder: #d8d8d8;
 
 // user color palettes
 
@@ -40,9 +46,15 @@ $userPaletteOffice2: #eab052;
 $userPaletteOffice3: #a0c0cf;
 
 // fonts
+<<<<<<< HEAD
 $textFont: 'OpenSans';
 $cardFont: 'Montserrat';
 $specialFont: 'Merriweather';
+=======
+$textFont: "OpenSans";
+$cardFont: "Montserrat";
+$specialFont: "Merriweather";
+>>>>>>> 052afcb5a6e1fcc524bef058c9b900578fdd4696
 
 // font size
 $defaultFontSize: 16px;
