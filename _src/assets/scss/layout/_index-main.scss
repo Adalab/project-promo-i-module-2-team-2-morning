@@ -76,6 +76,12 @@
   }
 }
 
+.fa-object-ungroup,
+.fa-keyboard,
+.fa-share-all {
+  color: $orange;
+}
+
 // TABLET STYLES
 @media all and(min-width: 768px) {
   .index-main {
@@ -84,6 +90,10 @@
     }
     &__content {
       font-size: 16px;
+    }
+    &__text-list {
+      font-size: 16px;
+      padding-bottom: 20px;
     }
   }
 }
