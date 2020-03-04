@@ -22,16 +22,11 @@ $backgroundFade1: linear-gradient(#bfcdd0, #dde9ed);
 $backgroundFade2: linear-gradient(#f5f5f5, #ffffff);
 $twitter: #00a0f5;
 
-<<<<<<< HEAD
 // borders
 $resetBorder: $white;
 $formBorder: $brightGreen;
 $landingBorder: $orange;
-=======
-//border
-
-$borderColor: #d8d8d8;
->>>>>>> 6de4fe8d479693c0d5f4f26ddc3ad273150ce220
+$footerBorder: #d8d8d8;
 
 // user color palettes
 
@@ -51,9 +46,9 @@ $userPaletteOffice2: #eab052;
 $userPaletteOffice3: #a0c0cf;
 
 // fonts
-$textFont: 'OpenSans';
-$cardFont: 'Montserrat';
-$specialFont: 'Merriweather';
+$textFont: "OpenSans";
+$cardFont: "Montserrat";
+$specialFont: "Merriweather";
 
 // font size
 $defaultFontSize: 16px;
