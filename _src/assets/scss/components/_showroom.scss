@@ -21,22 +21,19 @@
   height: 30px;
   margin-bottom: 20px;
   border-radius: 50px;
-  font-family: $textFont1;
+  font-family: $textFont;
   background-color: transparent;
   text-transform: uppercase;
   border: 1px solid white;
   color: $textColor;
 }
 
-.showroom-card__blue-box {
-  width: 5px;
-  height: 42px;
-  background: $bright-blue;
-  position: fixed;
+.showroom-card__texts {
+    border-left: solid 5px $bright-blue;
 }
 
 .layout__title {
-  font-family: $cardFont2;
+  font-family: $cardFont;
   font-size: 18px;
   margin-left: 20px;
   margin-bottom: 4px;
@@ -44,7 +41,7 @@
 }
 
 .layout__text {
-  font-family: $cardFont1;
+  font-family: $cardFont;
   font-size: 16px;
   margin-left: 20px;
   margin-bottom: 10px;
