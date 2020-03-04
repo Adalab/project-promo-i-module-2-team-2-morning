@@ -31,20 +31,20 @@
 .showroom-card__blue-box {
   width: 5px;
   height: 42px;
-  background: $bright-blue;
+  background: $brightBlue;
   position: fixed;
 }
 
 .layout__title {
-  font-family: $cardFont2;
+  font-family: $cardFont;
   font-size: 18px;
   margin-left: 20px;
   margin-bottom: 4px;
-  color: $dark-blue;
+  color: $darkBlue;
 }
 
 .layout__text {
-  font-family: $cardFont1;
+  font-family: $cardFont;
   font-size: 16px;
   margin-left: 20px;
   margin-bottom: 10px;
@@ -67,7 +67,7 @@
 .media-icon {
   width: 32px;
   height: 32px;
-  border: 2px solid $bright-green;
+  border: 2px solid $brightGreen;
   border-radius: 50px;
   display: flex;
   align-items: center;
