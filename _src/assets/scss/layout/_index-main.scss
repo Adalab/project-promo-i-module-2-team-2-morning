@@ -8,7 +8,7 @@
   align-items: center;
   text-align: center;
   &__image {
-    padding-top: 21%;
+    // padding-top: 21%;
     width: 250px;
   }
   &__title {
@@ -36,7 +36,7 @@
   .index-main {
     height: 100vh;
     &__image {
-      padding-top: 37%;
+      padding-top: 13%;
       width: 419px;
     }
     &__title {
@@ -45,9 +45,9 @@
     &__list {
       margin-top: 3%;
     }
-    &__button {
-      margin-top: 20%;
-    }
+    // &__button {
+    //   margin-top: 20%;
+    // }
   }
 }
 
@@ -76,6 +76,7 @@
   &__button {
     text-transform: uppercase;
     font-family: $textFont;
+    font-weight: medium;
     padding: 10px 20px;
     border-radius: 21px;
     background-color: $brightBlue;
@@ -109,3 +110,7 @@
 .index-main {
   border: solid 2px red;
 }
+
+// .index-main__table {
+//   border: solid 2px #fabada;
+// }
