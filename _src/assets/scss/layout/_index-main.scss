@@ -2,7 +2,6 @@
 
 .index-main {
   height: 80vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +34,7 @@
 
 @media all and (min-width: 768px) {
   .index-main {
-    height: 963px;
+    height: 100vh;
     &__image {
       padding-top: 37%;
       width: 419px;
