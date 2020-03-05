@@ -1,0 +1,53 @@
+.footer {
+  display: grid;
+  grid-template-rows: 19px 32px 60px;
+  align-items: start;
+  justify-items: center;
+
+  @media all and (min-width: $displayM) {
+    grid-template-rows: 11px 40px 10px;
+    grid-template-columns: 41px 1fr 1fr 40px;
+  }
+
+  &__mark {
+    grid-row: 1 / 2;
+    color: $footerBorder;
+    width: 100%;
+
+    @media all and (min-width: $displayM) {
+      grid-row: 1 / 2;
+      grid-column: span 4;
+    }
+  }
+
+  &__copy {
+    grid-row: 2 / 3;
+    color: $textColor2;
+    font-family: $textFont;
+    @include t(14px, 20px, 400);
+    text-align: center;
+
+    @media all and (min-width: $displayM) {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+      justify-self: left;
+      align-self: center;
+    }
+  }
+
+  &__logo {
+    grid-row: 3 / 4;
+    width: 103px;
+    height: 40px;
+
+    @media all and (min-width: $displayM) {
+      grid-row: 2 / 3;
+      grid-column: 3 / 4;
+      justify-self: right;
+    }
+  }
+
+  &__logo img {
+    width: 100%;
+  }
+}

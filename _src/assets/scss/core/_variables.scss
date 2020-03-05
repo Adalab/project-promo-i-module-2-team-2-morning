@@ -3,9 +3,9 @@ $black: black;
 $white: white;
 $khaki: #f9f4dc;
 $orange: #e17334;
-$dark-blue: #114e4e;
-$bright-blue: #438792;
-$bright-green: #a2deaf;
+$darkBlue: #114e4e;
+$brightBlue: #438792;
+$brightGreen: #a2deaf;
 
 // color items
 
@@ -13,7 +13,7 @@ $bright-green: #a2deaf;
 $textColor: #54585a;
 $textColor2: #6b6b6b;
 $textColor3: $white;
-$textCard: $dark-blue;
+$textCard: $darkBlue;
 
 // backgrounds
 $backgroundColor1: #f5f5f5;
@@ -22,12 +22,18 @@ $backgroundFade1: linear-gradient(#bfcdd0, #dde9ed);
 $backgroundFade2: linear-gradient(#f5f5f5, #ffffff);
 $twitter: #00a0f5;
 
+// borders
+$resetBorder: $white;
+$formBorder: $brightGreen;
+$landingBorder: $orange;
+$footerBorder: #d8d8d8;
+
 // user color palettes
 
 // user color palette Greenish
-$userPaletteGreenish1: $dark-blue;
-$userPaletteGreenish2: $bright-blue;
-$userPaletteGreenish3: $bright-green;
+$userPaletteGreenish1: $darkBlue;
+$userPaletteGreenish2: $brightBlue;
+$userPaletteGreenish3: $brightGreen;
 
 // user color palette Blood
 $userPaletteBlood1: #420101;
@@ -40,9 +46,9 @@ $userPaletteOffice2: #eab052;
 $userPaletteOffice3: #a0c0cf;
 
 // fonts
-$textFont: 'OpenSans';
-$cardFont: 'Montserrat';
-$specialFont: 'Merriweather';
+$textFont: 'Open Sans', sans-serif;
+$cardFont: 'Montserrat', sans-serif;
+$specialFont: 'Merriweather', sans-serif;
 
 // font size
 $defaultFontSize: 16px;

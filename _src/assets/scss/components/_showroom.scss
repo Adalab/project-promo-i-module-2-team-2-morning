@@ -1,76 +1,73 @@
 .showroom {
-    width: 320px;
-    height: 457px;
-    padding: 38px 35px 40px 45px;
-    background: $backgroundFade1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 320px;
+  height: 457px;
+  padding: 38px 35px 40px 45px;
+  background: $backgroundFade1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .layout {
-    width: 240px;
-    height: 329px;
-    padding: 21px 0 12px 0;
-    background-color: $white;
-    box-shadow: 1px 1px 5px #666;
+  width: 240px;
+  height: 457px;
+  padding: 21px 0 12px 0;
+  background-color: $white;
+  box-shadow: 1px 1px 5px #666;
 }
 
 .reset-button {
-    width: 75px;
-    height: 30px;
-    margin-bottom: 20px;
-    border-radius: 50px;
-    font-family: $textFont1;
-    background-color: transparent;
-    text-transform: uppercase;
-    border: 1px solid white;
-    color: $textColor;
+  width: 75px;
+  height: 30px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  font-family: $textFont;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid white;
+  color: $textColor;
 }
 
-.showroom-card__blue-box {
-    width: 5px;
-    height: 42px;
-    background: $bright-blue;
-    position: fixed;
+.showroom-card__texts {
+    border-left: solid 5px $brightBlue;
 }
 
 .layout__title {
-    font-family: $cardFont2;
-    font-size: 18px;
-    margin-left: 20px;
-    margin-bottom: 4px;
-    color: $dark-blue;
+  margin-left: 20px;
+  margin-bottom: 4px;
+  font-family: $cardFont;
+  @include t(18px, 20px, bold);
+  color: $textCard;
 }
 
 .layout__text {
-    font-family: $cardFont1;
-    font-size: 16px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    color: $textColor;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-family: $cardFont;
+  @include t (16px, 20px, normal);
+  color: $textColor;  
 }
 
 .photo {
-    width: 240px;
-    height: 200px;
-    margin-bottom: 10px;
+  width: 240px;
+  height: 200px;
+  margin-bottom: 10px;
 }
 
 .media-icons {
-    display: flex;
-    justify-content: flex-start;
-    list-style: none;
-    margin-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  margin-left: 20px;
 }
 
 .media-icon {
-    width: 32px;
-    height: 32px;
-    border: 2px solid $bright-green;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid $formBorder;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
 }

@@ -1,9 +1,26 @@
-@mixin t($fontSize, $lineHeight) {
+@mixin t($fontSize, $lineHeight, $fontWeight) {
   font-size: $fontSize;
   line-height: $lineHeight;
+  font-weight: $fontWeight;
+  @content;
 }
+
 @mixin titleSectionDesign() {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 600;
+}
+
+@mixin itemBordersDesign() {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  border: solid 2px var($formBorder);
+}
+
+@mixin resetBtnBorder() {
+  width: 75px;
+  height: 30px;
+  border-radius: 15px;
+  border: solid 1px var($white);
 }

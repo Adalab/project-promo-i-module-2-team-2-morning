@@ -63,17 +63,23 @@
   &__content {
     color: $textCard;
     font-size: 12.8px;
-    font-family: $textFont1;
+    font-family: $textFont;
   }
   &__list {
     border-radius: 4px;
     border: solid 1.6px rgba(225, 115, 52, 0.21);
   }
   &__text-list {
-    font-family: $textFont1;
+    font-family: $textFont;
     font-size: 12.8px;
     color: $textColor;
   }
+}
+
+.fa-object-ungroup,
+.fa-keyboard,
+.fa-share-all {
+  color: $orange;
 }
 
 // TABLET STYLES
@@ -84,6 +90,10 @@
     }
     &__content {
       font-size: 16px;
+    }
+    &__text-list {
+      font-size: 16px;
+      padding-bottom: 20px;
     }
   }
 }
