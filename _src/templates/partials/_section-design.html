@@ -5,7 +5,7 @@
       <h3 class="section-page__design__colors__subtitle">
         colores
       </h3>
-      <form class="section-page__design__colors__form">
+      <form action="" method="GET" id="select-color" class="section-page__design__colors__form">
         <partial src="_label-color.html" aClass="section-page__design__colors__form__palette01" classList="section-page__design__colors__form__palette01--list"></partial>
         <partial src="_label-color.html" aClass="section-page__design__colors__form__palette02" classList="section-page__design__colors__form__palette02--list"></partial>
         <partial src="_label-color.html" aClass="section-page__design__colors__form__palette03" classList="section-page__design__colors__form__palette03--list"></partial>
@@ -15,13 +15,11 @@
   <!-- SECTION RELLENA -->
   <div class="section-page__fill">
     <partial src="_header-design.html" title="rellena" icon="far fa-keyboard"></partial>
-    <form class="section-page__fill__form">
-      <label for="name">Nombre completo</label>
-      <input type="text" name="name" id="name" placeholder="Ej: Sally Jill" />
+    <form action="" method="GET" id="info-user" class="section-page__fill__form">
+      <label for="fullname">Nombre completo</label>
+      <input type="text" name="fullname" id="fullname" placeholder="Ej: Sally Jill" required />
       <label for="job">Puesto</label>
-      <input type="text" name="job" id="job" placeholder="Ej: Front-end unicorn" />
-      <label for="name">Nombre completo</label>
-      <input type="text" name="fullname" id="fullname" placeholder="Ej: Sally Jill" />
+      <input type="text" name="job" id="job" placeholder="Ej: Front-end unicorn" required />
       <label for="img" class="label-img">Imagen de perfil</label>
       <div class="img-container">
         <button type="submit" class="btn-add">Añadir imagen</button>
