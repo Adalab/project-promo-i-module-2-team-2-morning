@@ -118,15 +118,24 @@
         font-family: 'Open Sans', sans-serif;
         color: #114e4e;
       }
-      button {
-        border: none;
-        padding: 5px 22px;
-        margin-bottom: 10px;
-        background-color: #e17334;
-        border-radius: 3px;
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-        color: white;
-        @include t(14px, 20px, normal);
+      .img-container {
+        display: flex;
+        button {
+          border: none;
+          padding: 5px 22px;
+          margin-bottom: 10px;
+          background-color: #e17334;
+          border-radius: 3px;
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+          color: white;
+          @include t(14px, 20px, normal);
+        }
+        .img-user {
+          border: 1px solid #a2deaf;
+          width: 30px;
+          height: 30px;
+          margin-left: 20px;
+        }
       }
     }
   }
