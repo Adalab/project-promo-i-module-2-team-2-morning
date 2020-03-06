@@ -2,14 +2,13 @@
 
 .index-main {
   height: 80vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   &__image {
-    padding-top: 21%;
+    // padding-top: 21%;
     width: 250px;
   }
   &__title {
@@ -35,9 +34,9 @@
 
 @media all and (min-width: 768px) {
   .index-main {
-    height: 963px;
+    height: 100vh;
     &__image {
-      padding-top: 37%;
+      padding-top: 13%;
       width: 419px;
     }
     &__title {
@@ -46,9 +45,9 @@
     &__list {
       margin-top: 3%;
     }
-    &__button {
-      margin-top: 20%;
-    }
+    // &__button {
+    //   margin-top: 20%;
+    // }
   }
 }
 
@@ -74,6 +73,17 @@
     font-size: 12.8px;
     color: $textColor;
   }
+  &__button {
+    text-transform: uppercase;
+    font-family: $textFont;
+    font-weight: medium;
+    padding: 10px 20px;
+    border-radius: 21px;
+    background-color: $brightBlue;
+    color: $white;
+    text-decoration: none;
+    border: none;
+  }
 }
 
 .fa-object-ungroup,
@@ -98,6 +108,10 @@
   }
 }
 // border cajas
-.index-main {
-  border: solid 2px red;
-}
+// .index-main {
+//   border: solid 2px red;
+// }
+
+// .index-main__table {
+//   border: solid 2px #fabada;
+// }
