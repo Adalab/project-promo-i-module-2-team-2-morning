@@ -1,11 +1,10 @@
 .showroom {
-  width: 320px;
-  height: 457px;
   padding: 38px 35px 40px 45px;
   background: $backgroundFade1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .layout {
@@ -29,7 +28,7 @@
 }
 
 .showroom-card__texts {
-    border-left: solid 5px $brightBlue;
+  border-left: solid 5px $brightBlue;
 }
 
 .layout__title {
@@ -44,8 +43,8 @@
   margin-left: 20px;
   margin-bottom: 10px;
   font-family: $cardFont;
-  @include t (16px, 20px, normal);
-  color: $textColor;  
+  @include t(16px, 20px, normal);
+  color: $textColor;
 }
 
 .photo {
