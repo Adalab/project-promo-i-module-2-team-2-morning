@@ -23,7 +23,7 @@
   &__copy {
     grid-row: 2 / 3;
     color: $textColor2;
-    font-family: $textFont, sans-serif;
+    font-family: $textFont;
     @include t(14px, 20px, 400);
     text-align: center;
 
