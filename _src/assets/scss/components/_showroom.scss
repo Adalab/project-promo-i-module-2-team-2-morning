@@ -5,11 +5,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media all and (min-width: 768px) {
+    order: 1;
+    width: 50%;
+    border-radius: 6px;
+  }
 }
 
 .layout {
   width: 240px;
-  height: 457px;
   padding: 21px 0 12px 0;
   background-color: $white;
   box-shadow: 1px 1px 5px #666;

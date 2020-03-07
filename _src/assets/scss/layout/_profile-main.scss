@@ -1,0 +1,9 @@
+.section-profile {
+  background: $backgroundFade2;
+  padding: 0 0 30px 0;
+
+  @media all and (min-width: 768px) {
+    display: flex;
+    padding: 20px 40px;
+  }
+}
