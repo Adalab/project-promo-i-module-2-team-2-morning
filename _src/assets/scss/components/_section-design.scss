@@ -137,11 +137,19 @@
           cursor: pointer;
           @include t(14px, 20px, normal);
         }
+        .hiddenField {
+          /* Ocultamos el input de tipo "file" porque no podemos 
+          darle los estilos que queremos */
+          display: none;
+        }
         .img-user {
           border: 1px solid #a2deaf;
           width: 30px;
           height: 30px;
           margin-left: 20px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
         }
       }
     }
