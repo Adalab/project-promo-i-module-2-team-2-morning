@@ -6,7 +6,7 @@ const userMail = document.querySelector('.js-input-mail');
 const userPhone = document.querySelector('.js-input-phone');
 const userLinkedin = document.querySelector('.js-input-linkedin');
 const userGithub = document.querySelector('.js-input-github');
-//constante para leer archivo de img
+//constante fr para leer archivo de img
 const fr = new FileReader();
 const uploadBtn = document.querySelector('.js-btn-img');
 const fileField = document.querySelector('.js__profile-upload-btn');
