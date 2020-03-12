@@ -69,3 +69,13 @@ userGithub.addEventListener('keyup', showGithub);
 
 uploadBtn.addEventListener('click', fakeFileClick);
 fileField.addEventListener('change', getImage);
+
+//function palette
+const inputsRadio = document.querySelectorAll('.js-radio');
+function handleEventPalette(event) {
+  /* const inputSelected = event.currentTarget; */
+  console.dir(event.currentTarget);
+}
+for (let inputRadio of inputsRadio) {
+  inputRadio.addEventListener('click', handleEventPalette);
+}
