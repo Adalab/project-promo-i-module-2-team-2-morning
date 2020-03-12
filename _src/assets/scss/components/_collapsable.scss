@@ -2,4 +2,8 @@
   .collapsable-content {
     display: none;
   }
+  .collapsable-btn {
+    transition: transform 0.25s linear;
+    transform: rotate(180deg);
+  }
 }
