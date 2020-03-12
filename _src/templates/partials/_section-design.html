@@ -1,7 +1,7 @@
 <section class="section-page">
   <div class="section-page__design">
     <partial src="_header-design.html" title="diseña" icon="far fa-object-ungroup"></partial>
-    <div class="section-page__design__colors">
+    <div class="section-page__design__colors collapsable-content">
       <h3 class="section-page__design__colors__subtitle">
         colores
       </h3>
@@ -13,9 +13,9 @@
     </div>
   </div>
   <!-- SECTION RELLENA -->
-  <div class="section-page__fill">
+  <div class="section-page__fill collapsable-close">
     <partial src="_header-design.html" title="rellena" icon="far fa-keyboard"></partial>
-    <form action="" method="GET" id="info-user" class="section-page__fill__form">
+    <form action="" method="GET" id="info-user" class="section-page__fill__form collapsable-content">
       <label for="fullname">Nombre completo</label>
       <input class="js-input-name" type="text" name="fullname" id="fullname" placeholder="Ej: Sally Jill" required />
       <label for="job">Puesto</label>
@@ -37,9 +37,9 @@
     </form>
   </div>
   <!-- SHARE -->
-  <div class="section-page__share">
+  <div class="section-page__share collapsable-close">
     <partial src="_header-design.html" title="comparte" icon="fas fa-share-alt"></partial>
-    <form class="section-page__share__form">
+    <form class="section-page__share__form collapsable-content">
       <button type="submit">crear tarjeta</button>
     </form>
   </div>

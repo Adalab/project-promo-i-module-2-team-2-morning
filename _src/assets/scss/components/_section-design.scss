@@ -7,7 +7,6 @@
   /* SECTION DESIGN */
   &__design {
     border-bottom: 1px solid #d8d8d8;
-    padding-bottom: 20px;
 
     @import './_header-design';
     &__colors {
@@ -100,7 +99,6 @@
   /* SECTION RELLENA */
   &__fill {
     border-bottom: 1px solid #d8d8d8;
-    padding-bottom: 20px;
     @import '_header-design';
     &__form {
       padding-top: 10px;
@@ -157,7 +155,6 @@
   /* SECTION SHARE */
   &__share {
     border-bottom: 1px solid #d8d8d8;
-    padding-bottom: 20px;
     @import '_header-design';
 
     &__form {
@@ -182,6 +179,7 @@
     text-align: center;
     border-bottom: 1px solid #d8d8d8;
     padding-bottom: 20px;
+    display: none;
     &__title {
       padding-top: 20px;
       @include titleSectionDesign();
