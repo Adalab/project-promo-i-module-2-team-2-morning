@@ -72,9 +72,8 @@ fileField.addEventListener('change', getImage);
 
 //function palette
 const inputsRadio = document.querySelectorAll('.js-radio');
-function handleEventPalette(event) {
+function handleEventPalette() {
   /* const inputSelected = event.currentTarget; */
-  console.dir(event.currentTarget);
 }
 for (let inputRadio of inputsRadio) {
   inputRadio.addEventListener('click', handleEventPalette);
