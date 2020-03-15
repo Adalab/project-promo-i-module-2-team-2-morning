@@ -29,6 +29,11 @@
   text-transform: uppercase;
   border: 1px solid white;
   color: $textColor;
+  transition: background-color ease 0.3s;
+  &:hover {
+    background-color: $orange;
+    color: $white;
+  }
 }
 
 .showroom-card__texts {
