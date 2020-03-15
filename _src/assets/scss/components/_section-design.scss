@@ -185,6 +185,17 @@
         text-transform: uppercase;
         cursor: pointer;
       }
+      button:hover {
+        border-radius: 50%;
+        box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        transition-duration: 2s;
+
+        .fa-smile-wink {
+          transition-duration: 1s;
+          color: white;
+          font-size: 20px;
+        }
+      }
     }
   }
   &__card-create {
@@ -217,7 +228,8 @@
       cursor: pointer;
     }
   }
-  &__button-create-card {
-    background-color: black;
-  }
+}
+
+.fa-smile-wink {
+  color: #e17334;
 }
