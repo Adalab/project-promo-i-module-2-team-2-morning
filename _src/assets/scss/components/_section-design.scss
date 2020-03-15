@@ -137,7 +137,7 @@
           cursor: pointer;
           @include t(14px, 20px, normal);
         }
-        // ANIMACIÓN BOTÓN AÑADIR IMAGE
+        // ANIMACIÓN BOTÓN AÑADIR
         .btn-add:hover {
           background-color: $darkBlue;
           transform: scale(1.1);
@@ -216,5 +216,8 @@
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
       cursor: pointer;
     }
+  }
+  &__button-create-card {
+    background-color: black;
   }
 }
