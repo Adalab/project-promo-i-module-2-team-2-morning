@@ -1,51 +1,130 @@
 <section class="section-page">
   <div class="section-page__design">
-    <partial src="_header-design.html" title="diseña" icon="far fa-object-ungroup"></partial>
+    <partial
+      src="_header-design.html"
+      title="diseña"
+      icon="far fa-object-ungroup"
+    ></partial>
     <div class="section-page__design__colors">
       <h3 class="section-page__design__colors__subtitle">
         colores
       </h3>
-      <form action="" method="GET" id="select-color" class="section-page__design__colors__form">
-        <partial src="_label-color.html" aClass="section-page__design__colors__form__palette01" classList="section-page__design__colors__form__palette01--list"></partial>
-        <partial src="_label-color.html" aClass="section-page__design__colors__form__palette02" classList="section-page__design__colors__form__palette02--list"></partial>
-        <partial src="_label-color.html" aClass="section-page__design__colors__form__palette03" classList="section-page__design__colors__form__palette03--list"></partial>
+      <form
+        action=""
+        method="GET"
+        id="select-color"
+        class="section-page__design__colors__form"
+      >
+        <partial
+          src="_label-color.html"
+          aClass="section-page__design__colors__form__palette01"
+          classList="section-page__design__colors__form__palette01--list"
+        ></partial>
+        <partial
+          src="_label-color.html"
+          aClass="section-page__design__colors__form__palette02"
+          classList="section-page__design__colors__form__palette02--list"
+        ></partial>
+        <partial
+          src="_label-color.html"
+          aClass="section-page__design__colors__form__palette03"
+          classList="section-page__design__colors__form__palette03--list"
+        ></partial>
       </form>
     </div>
   </div>
   <!-- SECTION RELLENA -->
   <div class="section-page__fill">
-    <partial src="_header-design.html" title="rellena" icon="far fa-keyboard"></partial>
-    <form action="" method="GET" id="info-user" class="section-page__fill__form">
+    <partial
+      src="_header-design.html"
+      title="rellena"
+      icon="far fa-keyboard"
+    ></partial>
+    <form
+      action=""
+      method="GET"
+      id="info-user"
+      class="section-page__fill__form"
+    >
       <label for="fullname">Nombre completo</label>
-      <input class="js-input-name" type="text" name="fullname" id="fullname" placeholder="Ej: Sally Jill" required />
+      <input
+        class="js-input-name"
+        type="text"
+        name="fullname"
+        id="fullname"
+        placeholder="Ej: Sally Jill"
+        required
+      />
       <label for="job">Puesto</label>
-      <input class="js-input-job" type="text" name="job" id="job" placeholder="Ej: Front-end unicorn" required />
+      <input
+        class="js-input-job"
+        type="text"
+        name="job"
+        id="job"
+        placeholder="Ej: Front-end unicorn"
+        required
+      />
       <label for="img" class="label-img">Imagen de perfil</label>
       <div class="img-container">
         <button type="button" class="btn-add js-btn-img">Añadir imagen</button>
-        <input type="file" name="" id="img-selector" class="hiddenField js__profile-upload-btn" />
+        <input
+          type="file"
+          name=""
+          id="img-selector"
+          class="hiddenField js__profile-upload-btn"
+        />
         <div class="img-user js-preview"></div>
       </div>
       <label for="email">Email</label>
-      <input class="js-input-mail" type="email" name="email" id="email" placeholder="Ej: sally-hill@gmail.com" />
+      <input
+        class="js-input-mail"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Ej: sally-hill@gmail.com"
+      />
       <label for="phone">Teléfono</label>
-      <input class="js-input-phone" type="tel" name="phone" id="phone" placeholder="Ej: 555-55-55-55" />
+      <input
+        class="js-input-phone"
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder="Ej: 555-55-55-55"
+      />
       <label for="linkendin">Linkendin</label>
-      <input class="js-input-linkedin" type="text" name="linkendin" id="linkendin" placeholder="Ej: linkendin.com/in/sally.hill@gmail.com" />
+      <input
+        class="js-input-linkedin"
+        type="text"
+        name="linkendin"
+        id="linkendin"
+        placeholder="Ej: linkendin.com/in/sally.hill@gmail.com"
+      />
       <label for="github">Github</label>
-      <input class="js-input-github" type="text" name="github" id="github" placeholder="Ej: @sally-hill" />
+      <input
+        class="js-input-github"
+        type="text"
+        name="github"
+        id="github"
+        placeholder="Ej: @sally-hill"
+      />
     </form>
   </div>
   <!-- SHARE -->
   <div class="section-page__share">
-    <partial src="_header-design.html" title="comparte" icon="fas fa-share-alt"></partial>
-    <form class="section-page__share__form">
-      <button type="submit">crear tarjeta</button>
+    <partial
+      src="_header-design.html"
+      title="comparte"
+      icon="fas fa-share-alt"
+    ></partial>
+    <form class="section-page__share__form js-prevent-default-form">
+      <button type="submit" class="js-create-card">crear tarjeta</button>
     </form>
   </div>
   <div class="section-page__card-create">
     <h3 class="section-page__card-create__title">La tarjeta ha sido creada</h3>
-    <a href="#" class="section-page__card-create__link-card" target="_blank">https://awesome-profile-card.com?id=A456DF0001</a>
+    <a href="#" class="section-page__card-create__link-card" target="_blank"
+      >https://awesome-profile-card.com?id=A456DF0001</a
+    >
     <button type="submit" class="section-page__card-create__rrss-btn">
       <i class="fab fa-twitter" style="font-size: 18px;"></i>
       Compartir en twitter
