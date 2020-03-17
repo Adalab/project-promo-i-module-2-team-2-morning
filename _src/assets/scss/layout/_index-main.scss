@@ -85,7 +85,7 @@
     border: none;
     transform: scale(1, 1);
 
-    &:hover {
+    &.pulse {
       animation-timing-function: ease;
       animation: pulse 2s infinite;
       background-color: lighten($brightGreen, 10%);
