@@ -69,3 +69,13 @@ userGithub.addEventListener('keyup', showGithub);
 
 uploadBtn.addEventListener('click', fakeFileClick);
 fileField.addEventListener('change', getImage);
+
+// fetch
+
+fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/', {
+  method: 'POST',
+  body: JSON.stringify(json),
+  headers: {
+    'content-type': 'application/json'
+  }
+});
