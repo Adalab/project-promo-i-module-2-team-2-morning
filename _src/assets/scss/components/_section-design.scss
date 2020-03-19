@@ -7,15 +7,15 @@
   /* SECTION DESIGN */
   &__design {
     border-bottom: 1px solid #d8d8d8;
-    padding-bottom: 20px;
 
-    @import "./_header-design";
+    @import './_header-design';
     &__colors {
       display: flex;
       justify-content: space-between;
       padding-top: 10px;
+      margin-bottom: 10px;
       &__subtitle {
-        font-family: "Open Sans", sans-serif;
+        font-family: 'Open Sans', sans-serif;
         text-transform: uppercase;
         font-size: 14px;
         color: $textColor;
@@ -100,10 +100,10 @@
   /* SECTION RELLENA */
   &__fill {
     border-bottom: 1px solid #d8d8d8;
-    padding-bottom: 20px;
-    @import "_header-design";
+    @import '_header-design';
     &__form {
       padding-top: 10px;
+      margin-bottom: 20px;
       input {
         display: block;
         width: 100%;
@@ -121,7 +121,7 @@
         width: 100%;
         padding: 7px 0px;
         @include t(14px, 20px, normal);
-        font-family: "Open Sans", sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: #114e4e;
       }
       .img-container {
@@ -166,8 +166,7 @@
   /* SECTION SHARE */
   &__share {
     border-bottom: 1px solid #d8d8d8;
-    padding-bottom: 20px;
-    @import "_header-design";
+    @import '_header-design';
 
     &__form {
       text-align: center;
@@ -202,6 +201,7 @@
     text-align: center;
     border-bottom: 1px solid #d8d8d8;
     padding-bottom: 20px;
+    display: none;
     &__title {
       padding-top: 20px;
       @include titleSectionDesign();
@@ -210,7 +210,7 @@
     &__link-card {
       text-decoration: none;
       @include t(14px, 20px, 600);
-      font-family: "Open Sans", sans-serif;
+      font-family: 'Open Sans', sans-serif;
       color: $orange;
       display: block;
       margin-top: 5px;

@@ -44,9 +44,8 @@ function showGithub() {
   iconGithub.href = userGithub.value;
 }
 
-//funcion upload img
 function getImage(e) {
-  let myFile = e.currentTarget.files[0];
+  var myFile = e.currentTarget.files[0];
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
 }
@@ -70,3 +69,21 @@ userGithub.addEventListener('keyup', showGithub);
 
 uploadBtn.addEventListener('click', fakeFileClick);
 fileField.addEventListener('change', getImage);
+
+//function collapsable
+const collapsableTrigger = document.querySelectorAll('.collapsable-header');
+
+function collapsable(e) {
+  const parentEventArrow = e.currentTarget.parentElement;
+  if (!parentEventArrow.classList.contains('collapsable-close')) {
+    parentEventArrow.classList.add('collapsable-close');
+  } else {
+    for (const item of collapsableTrigger) {
+      item.parentElement.classList.add('collapsable-close');
+    }
+    parentEventArrow.classList.remove('collapsable-close');
+  }
+}
+for (const trigger of collapsableTrigger) {
+  trigger.addEventListener('click', collapsable);
+}
