@@ -90,7 +90,7 @@ function returnInfo() {
   if (returnUserInfo !== null) {
     userName.value = returnUserInfo.name;
     userJob.value = returnUserInfo.job;
-    // fr.result = returnUserInfo.photo;
+    profilePreview.style.backgroundImage = "url(" + returnUserInfo.photo + ")";
     userMail.value = returnUserInfo.mail;
     userPhone.value = returnUserInfo.phone;
     userLinkedin.value = returnUserInfo.linkedin;
