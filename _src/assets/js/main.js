@@ -43,9 +43,10 @@ function showGithub() {
   const iconGithub = document.querySelector('.js-github-icon');
   iconGithub.href = userGithub.value;
 }
+
 //funcion upload img
 function getImage(e) {
-  var myFile = e.currentTarget.files[0];
+  let myFile = e.currentTarget.files[0];
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
 }
