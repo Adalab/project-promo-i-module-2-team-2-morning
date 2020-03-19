@@ -65,10 +65,7 @@
 }
 
 .media-icon {
-  width: 32px;
-  height: 32px;
-  border: 2px solid $formBorder;
-  border-radius: 50px;
+  @include itemBordersDesign();
   display: flex;
   align-items: center;
   justify-content: center;
