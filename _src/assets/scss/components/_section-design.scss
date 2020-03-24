@@ -7,7 +7,6 @@
   /* SECTION DESIGN */
   &__design {
     border-bottom: 1px solid #d8d8d8;
-
     @import './_header-design';
     &__colors {
       display: flex;
@@ -25,72 +24,17 @@
           width: 17px;
           height: 17px;
         }
-        &__palette01 {
+        &__palette {
           display: flex;
           align-items: center;
           margin-bottom: 10px;
-          &--list {
+          &__list {
             display: flex;
             margin-left: 10px;
             list-style: none;
             .list--color {
               width: 30px;
               height: 25px;
-              &:first-child {
-                background-color: $userPaletteGreenish1;
-              }
-              &:nth-child(2) {
-                background-color: $userPaletteGreenish2;
-              }
-              &:last-child {
-                background-color: $userPaletteGreenish3;
-              }
-            }
-          }
-        }
-        &__palette02 {
-          display: flex;
-          align-items: center;
-          margin-bottom: 10px;
-          &--list {
-            display: flex;
-            margin-left: 10px;
-            list-style: none;
-            .list--color {
-              width: 30px;
-              height: 25px;
-              &:first-child {
-                background-color: $userPaletteBlood1;
-              }
-              &:nth-child(2) {
-                background-color: $userPaletteBlood2;
-              }
-              &:last-child {
-                background-color: $userPaletteBlood3;
-              }
-            }
-          }
-        }
-        &__palette03 {
-          display: flex;
-          align-items: center;
-          margin-bottom: 10px;
-          &--list {
-            display: flex;
-            margin-left: 10px;
-            list-style: none;
-            .list--color {
-              width: 30px;
-              height: 25px;
-              &:first-child {
-                background-color: $userPaletteOffice1;
-              }
-              &:nth-child(2) {
-                background-color: $userPaletteOffice2;
-              }
-              &:last-child {
-                background-color: $userPaletteOffice3;
-              }
             }
           }
         }
