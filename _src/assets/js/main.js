@@ -217,6 +217,7 @@ function paintInfoLocal() {
     borderIcon.style.borderColor = userInfo.palette.tertiaryColor;
   }
 }
+returnInfo();
 
 // RESET BUTTON
 
