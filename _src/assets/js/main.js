@@ -21,6 +21,7 @@ const iconGithub = document.querySelector(".js-github-icon");
 const marginCard = document.querySelector(".showroom-card__texts");
 const icons = document.querySelectorAll(".icon");
 const borderIcons = document.querySelectorAll(".media-icon");
+const resetButton = document.querySelector(".reset-button");
 
 //Funciones para obtener datos de usuario
 
@@ -147,3 +148,9 @@ function paintClickedPalette(paletteClickedId) {
     }
   }
 }
+
+// RESET BUTTON
+
+function resetInfo() {}
+
+resetButton.addEventListener("click", resetInfo);
