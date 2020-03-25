@@ -21,32 +21,97 @@ const iconGithub = document.querySelector('.js-github-icon');
 const marginCard = document.querySelector('.showroom-card__texts');
 const icons = document.querySelectorAll('.icon');
 const borderIcons = document.querySelectorAll('.media-icon');
-/* const resetButton = document.querySelector('.reset-button'); */
+const resetButton = document.querySelector('.reset-button');
+
+// PALETAS
+
+let palettes = [
+  {
+    name: 'paleta1',
+    primaryColor: '#114E4E',
+    secondaryColor: '#438792',
+    tertiaryColor: '#A2DEAF',
+    id: '1'
+  },
+  {
+    name: 'paleta2',
+    primaryColor: '#420101',
+    secondaryColor: '#BD1010',
+    tertiaryColor: '#E95626',
+    id: '2'
+  },
+  {
+    name: 'paleta3',
+    primaryColor: '#3E5B65',
+    secondaryColor: '#EAB052',
+    tertiaryColor: '#A0C0CF',
+    id: '3'
+  }
+];
+//objeto userinfo
+let userInfo = {
+  palette: {},
+  name: '',
+  job: '',
+  photo: '',
+  email: '',
+  phone: '',
+  linkedin: '',
+  github: ''
+};
 
 //Funciones para obtener datos de usuario
+function paintClickedPalette(paletteClickedId) {
+  for (const palette of palettes) {
+    if (paletteClickedId === palette.id) {
+      showName.style.color = palette.primaryColor;
+      marginCard.style.borderLeftColor = palette.secondaryColor;
+      for (const icon of icons) {
+        icon.style.color = palette.primaryColor;
+      }
+      for (const borderIcon of borderIcons) {
+        borderIcon.style.borderColor = palette.tertiaryColor;
+      }
+      userInfo.palette = palette;
+      saveOnLocalStorage();
+    }
+  }
+}
 
 function getUserName() {
   showName.innerHTML = userName.value;
+  userInfo.name = userName.value;
+  saveOnLocalStorage();
 }
 
 function getUserJob() {
   showJob.innerHTML = userJob.value;
+  userInfo.job = userJob.value;
+  saveOnLocalStorage();
 }
 
 function showMail() {
   iconMail.href = 'mailto:' + userMail.value;
+  userInfo.email = userMail.value;
+  saveOnLocalStorage();
 }
 
 function showPhone() {
   iconPhone.href = 'tel:' + userPhone.value;
+  userInfo.phone = userPhone.value;
+  saveOnLocalStorage();
 }
 
 function showLinkedin() {
-  iconLinkedin.href = userLinkedin.value;
+  iconLinkedin.href = 'https://www.linkedin.com/in/' + userLinkedin.value;
+  userInfo.linkedin = userLinkedin.value;
+  saveOnLocalStorage();
 }
 
 function showGithub() {
-  iconGithub.href = userGithub.value;
+  iconGithub.href = 'https://github.com/' + userGithub.value;
+  userInfo.github = userGithub.value;
+  saveOnLocalStorage();
 }
 
 function getImage(e) {
@@ -61,7 +126,10 @@ function writeImage() {
    */
   profileImage.src = `${fr.result}`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+  userInfo.photo = fr.result;
+  saveOnLocalStorage();
 }
+
 function fakeFileClick() {
   fileField.click();
 }
@@ -94,32 +162,6 @@ for (const trigger of collapsableTrigger) {
   trigger.addEventListener('click', collapsable);
 }
 
-// PALETAS
-
-let palettes = [
-  {
-    name: 'paleta1',
-    primaryColor: '#114E4E',
-    secondaryColor: '#438792',
-    tertiaryColor: '#A2DEAF',
-    id: '1'
-  },
-  {
-    name: 'paleta2',
-    primaryColor: '#420101',
-    secondaryColor: '#BD1010',
-    tertiaryColor: '#E95626',
-    id: '2'
-  },
-  {
-    name: 'paleta3',
-    primaryColor: '#3E5B65',
-    secondaryColor: '#EAB052',
-    tertiaryColor: '#A0C0CF',
-    id: '3'
-  }
-];
-
 const buttonRadio = document.querySelectorAll('.js-radio');
 
 for (let i = 0; i < buttonRadio.length; i++) {
@@ -134,18 +176,45 @@ function listenToPalette(ev) {
   paintClickedPalette(paletteClickedId);
 }
 
-function paintClickedPalette(paletteClickedId) {
-  for (const palette of palettes) {
-    if (paletteClickedId === palette.id) {
-      showName.style.color = palette.primaryColor;
-      marginCard.style.borderLeftColor = palette.secondaryColor;
-      for (const icon of icons) {
-        icon.style.color = palette.primaryColor;
-      }
-      for (const borderIcon of borderIcons) {
-        borderIcon.style.borderColor = palette.tertiaryColor;
-      }
-    }
+// FUNCIONES PARA LOCAL-STORAGE
+
+/* function saveInfo(palette) {
+  saveOnLocalStorage();
+}
+ */
+function saveOnLocalStorage() {
+  localStorage.setItem('user', JSON.stringify(userInfo));
+}
+
+function returnInfo() {
+  const returnUserInfo = localStorage.getItem('user');
+  if (returnUserInfo !== null) {
+    userInfo = JSON.parse(returnUserInfo);
+    paintInfoLocal();
+  }
+}
+function paintInfoLocal() {
+  userName.value = userInfo.name;
+  userJob.value = userInfo.job;
+  profileImage.src = userInfo.photo;
+  profilePreview.style.backgroundImage = `url(${userInfo.photo})`;
+  userMail.value = userInfo.mail;
+  userPhone.value = userInfo.phone;
+  userLinkedin.value = userInfo.linkedin;
+  userGithub.value = userInfo.github;
+  showJob.innerHTML = userJob.value;
+  iconGithub.href = 'https://github.com/' + userGithub.value;
+  iconLinkedin.href = 'https://www.linkedin.com/in/' + userLinkedin.value;
+  iconPhone.href = 'tel:' + userPhone.value;
+  iconMail.href = 'mailto:' + userMail.value;
+  showName.innerHTML = userName.value;
+  showName.style.color = userInfo.palette.primaryColor;
+  marginCard.style.borderLeftColor = userInfo.palette.secondaryColor;
+  for (const icon of icons) {
+    icon.style.color = userInfo.palette.primaryColor;
+  }
+  for (const borderIcon of borderIcons) {
+    borderIcon.style.borderColor = userInfo.palette.tertiaryColor;
   }
 }
 
