@@ -204,7 +204,7 @@ function getlocalStorageInfo() {
   }
 }
 
-//function paint Card
+//function paint User in Local Storage
 
 function paintLocalStorage() {
   //name
