@@ -17,11 +17,15 @@ const profilePreview = document.querySelector('.js-preview');
 //saco a global las constantes de los elementos a pintar
 const showName = document.querySelector('.layout__title');
 const showJob = document.querySelector('.layout__text');
+const iconLinkedin = document.querySelector('.js-linkedin-icon');
 let iconsMedia = document.querySelectorAll('.media-icon');
 const iconFas = document.querySelector('.fas');
 let iconFab = document.querySelectorAll('.fab');
 const iconFar = document.querySelector('.fa-envelope');
 const borderLeftCard = document.querySelector('.showroom-card__texts');
+const iconMail = document.querySelector('.js-mail-icon');
+const iconGithub = document.querySelector('.js-github-icon');
+const iconPhone = document.querySelector('.js-phone-icon');
 //ros-labels colores
 let labelPalettes = document.querySelectorAll('.js-label');
 
@@ -50,10 +54,18 @@ const palettes = [
   }
 ];
 //objeto persona para añadir datos
-const userInfoPalette = {
-  palette: palettes[0]
+let userInfoCard = {
+  palette: palettes[0],
+  name: '',
+  job: '',
+  phone: 555 - 55 - 55,
+  email: '',
+  linkedin: '',
+  github: '',
+  photo: ''
 };
-//function paintHtmlPalette
+
+//function paint html palette colors
 function paintHtmlPaletteDefault() {
   for (const label of labelPalettes) {
     let liLabel = label.querySelectorAll('.js-li');
@@ -68,10 +80,11 @@ function paintHtmlPaletteDefault() {
 }
 //funcion obtener el check de los inputs
 let inputsRadio = document.querySelectorAll('.js-radio');
+inputsRadio[0].setAttribute('checked', true);
 for (const inputRadio of inputsRadio) {
-  inputsRadio[0].setAttribute('checked', true);
   inputRadio.addEventListener('click', paintCheckRadio);
 }
+
 function paintCheckRadio(ev) {
   let inputSelect = ev.currentTarget;
   let inputValue = inputSelect.value;
@@ -88,55 +101,50 @@ function paintCheckRadio(ev) {
       }
       iconFar.style.color = palette.colorPrimary;
       borderLeftCard.style.borderLeftColor = palette.colorSecundary;
-      userInfoPalette.palette = palette;
-      console.log(userInfoPalette);
+      userInfoCard.palette = palette;
       setlocalStorageInfo();
     }
   }
 }
+//function paint Html
 
 //Funciones para obtener datos de usuario
 function getUserName() {
   /* const showName = document.querySelector('.layout__title'); */
   showName.innerHTML = userName.value;
-  userInfoPalette.name = userName.value;
-  console.log(userInfoPalette);
+  userInfoCard.name = userName.value;
   setlocalStorageInfo();
 }
 
 function getUserJob() {
   /* const showJob = document.querySelector('.layout__text'); */
   showJob.innerHTML = userJob.value;
-  userInfoPalette.job = userJob.value;
-  console.log(userInfoPalette);
+  userInfoCard.job = userJob.value;
   setlocalStorageInfo();
 }
 
 function showMail() {
-  const iconMail = document.querySelector('.js-mail-icon');
+  /* const iconMail = document.querySelector('.js-mail-icon'); */
   iconMail.href = 'mailto:' + userMail.value;
-  userInfoPalette.mail = userMail.value;
+  userInfoCard.email = userMail.value;
   setlocalStorageInfo();
 }
 
 function showPhone() {
-  const iconPhone = document.querySelector('.js-phone-icon');
   iconPhone.href = 'tel:' + userPhone.value;
-  userInfoPalette.phone = userPhone.value;
+  userInfoCard.phone = userPhone.value;
   setlocalStorageInfo();
 }
 
 function showLinkedin() {
-  const iconLinkedin = document.querySelector('.js-linkedin-icon');
-  iconLinkedin.href = userLinkedin.value;
-  userInfoPalette.linkendin = userLinkedin.value;
+  iconLinkedin.href = 'https://www.' + userLinkedin.value;
+  userInfoCard.linkedin = userLinkedin.value;
   setlocalStorageInfo();
 }
 
 function showGithub() {
-  const iconGithub = document.querySelector('.js-github-icon');
-  iconGithub.href = userGithub.value;
-  userInfoPalette.github = userGithub.value;
+  iconGithub.href = 'https://github.com/' + userGithub.value;
+  userInfoCard.github = userGithub.value;
   setlocalStorageInfo();
 }
 
@@ -145,13 +153,12 @@ function getImage(e) {
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
 }
-
+/* En la propiedad `result` de nuestro FR se almacena el resultado
+ */
 function writeImage() {
-  /* En la propiedad `result` de nuestro FR se almacena el resultado
-   */
   profileImage.src = `${fr.result}`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
-  userInfoPalette.photo = fr.result;
+  userInfoCard.photo = fr.result;
   setlocalStorageInfo();
 }
 function fakeFileClick() {
@@ -164,7 +171,6 @@ userMail.addEventListener('keyup', showMail);
 userPhone.addEventListener('keyup', showPhone);
 userLinkedin.addEventListener('keyup', showLinkedin);
 userGithub.addEventListener('keyup', showGithub);
-
 uploadBtn.addEventListener('click', fakeFileClick);
 fileField.addEventListener('change', getImage);
 
@@ -187,11 +193,59 @@ for (const trigger of collapsableTrigger) {
 }
 //function localStorage
 function setlocalStorageInfo() {
-  localStorage.setItem('userInfoPalette', JSON.stringify(userInfoPalette));
+  localStorage.setItem('userInfoCard', JSON.stringify(userInfoCard));
 }
+
 function getlocalStorageInfo() {
-  let infoLocalStorage = JSON.parse(localStorage.getItem('userInfoPalette'));
-  console.log(infoLocalStorage);
+  let itemLocalStorage = localStorage.getItem('userInfoCard');
+  if (itemLocalStorage !== null) {
+    userInfoCard = JSON.parse(itemLocalStorage);
+    paintLocalStorage();
+  }
+}
+
+//function paint Card
+
+function paintLocalStorage() {
+  //name
+  showName.innerHTML = userInfoCard.name;
+  userName.value = userInfoCard.name;
+  showName.style.color = userInfoCard.palette.colorPrimary;
+  //job
+  userJob.value = userInfoCard.job;
+  showJob.innerHTML = userJob.value;
+  showName.style.color = userInfoCard.palette.colorSecundary;
+  //img
+  profilePreview.style.backgroundImage = `url(${userInfoCard.photo})`;
+  profileImage.src = userInfoCard.photo;
+  //email
+  userMail.value = userInfoCard.email;
+  iconMail.href = 'mailto:' + userInfoCard.email;
+  //phone
+  userPhone.value = userInfoCard.phone;
+  iconPhone.href = 'tel:' + userInfoCard.phone;
+  //linkendin
+  userLinkedin.value = userInfoCard.linkedin;
+  iconLinkedin.href = 'https://www.' + userInfoCard.linkedin;
+  //gtihub
+  userGithub.value = userInfoCard.github;
+  iconGithub.href = 'https://github.com/' + userInfoCard.github;
+  //styles icons
+  iconFar.style.color = userInfoCard.palette.colorPrimary;
+  borderLeftCard.style.borderLeftColor = userInfoCard.palette.colorSecundary;
+  iconFas.style.color = userInfoCard.palette.colorPrimary;
+  for (const liIcon of iconsMedia) {
+    liIcon.style.borderColor = userInfoCard.palette.colorSecundary;
+  }
+  for (const icon of iconFab) {
+    icon.style.color = userInfoCard.palette.colorPrimary;
+  }
+  //poner a estado check el input radio
+  for (const inputRadio of inputsRadio) {
+    if (userInfoCard.palette.id === inputRadio.value) {
+      inputRadio.setAttribute('checked', true);
+    }
+  }
 }
 paintHtmlPaletteDefault();
 getlocalStorageInfo();
