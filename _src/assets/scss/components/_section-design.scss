@@ -7,13 +7,13 @@
   /* SECTION DESIGN */
   &__design {
     border-bottom: 1px solid #d8d8d8;
-    padding-bottom: 20px;
 
     @import './_header-design';
     &__colors {
       display: flex;
       justify-content: space-between;
       padding-top: 10px;
+      margin-bottom: 10px;
       &__subtitle {
         font-family: 'Open Sans', sans-serif;
         text-transform: uppercase;
@@ -100,10 +100,10 @@
   /* SECTION RELLENA */
   &__fill {
     border-bottom: 1px solid #d8d8d8;
-    padding-bottom: 20px;
     @import '_header-design';
     &__form {
       padding-top: 10px;
+      margin-bottom: 20px;
       input {
         display: block;
         width: 100%;
@@ -137,6 +137,15 @@
           cursor: pointer;
           @include t(14px, 20px, normal);
         }
+        // ANIMACIÓN BOTÓN AÑADIR
+        .btn-add:hover {
+          background-color: $darkBlue;
+          transform: scale(1.1);
+          box-shadow: 0px 10px 5px 0px grey;
+          font-size: 16px;
+          font-weight: bold;
+        }
+
         .hiddenField {
           /* Ocultamos el input de tipo "file" porque no podemos 
           darle los estilos que queremos */
@@ -157,7 +166,6 @@
   /* SECTION SHARE */
   &__share {
     border-bottom: 1px solid #d8d8d8;
-    padding-bottom: 20px;
     @import '_header-design';
 
     &__form {
@@ -176,12 +184,24 @@
         text-transform: uppercase;
         cursor: pointer;
       }
+      button:hover {
+        border-radius: 50%;
+        box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        transition-duration: 2s;
+
+        .fa-smile-wink {
+          transition-duration: 1s;
+          color: white;
+          font-size: 20px;
+        }
+      }
     }
   }
   &__card-create {
     text-align: center;
     border-bottom: 1px solid #d8d8d8;
     padding-bottom: 20px;
+    display: none;
     &__title {
       padding-top: 20px;
       @include titleSectionDesign();
@@ -208,4 +228,8 @@
       cursor: pointer;
     }
   }
+}
+
+.fa-smile-wink {
+  color: #e17334;
 }
