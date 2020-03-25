@@ -31,13 +31,15 @@
                     />
                     <nav>
                         <ul class="media-icons">
-                            <li class="media-icon"> <a class="js-phone-icon" href="" alt="Phone number" title="Call">                   <div class="fas fa-mobile-alt" style="color:#114e4e"></div>                 </a> 
+                            <li class="media-icon"> <a class="js-phone-icon" href="" alt="Phone number" title="Call">                   <div                     class="icon fas fa-mobile-alt"                     style="color:#114e4e"                   ></div>                 </a> 
                             </li>
-                            <li class="media-icon"> <a class="js-mail-icon" href="" alt="Mail" title="Mail">                   <i class="far fa-envelope" style="color: #114e4e"></i>                 </a> 
+                            <li class="media-icon"> <a class="js-mail-icon" href="" alt="Mail" title="Mail">                   <i class="icon far fa-envelope" style="color: #114e4e"></i>                 </a> 
                             </li>
-                            <li class="media-icon"> <a href="" alt="Linkedin" title="Go to Linkedin" class="js-linkedin-icon">                   <div class="fab fa-linkedin-in" style="color:#114e4e"></div>                 </a> 
+                            <li class="media-icon"> <a href="" alt="Linkedin" title="Go to Linkedin" class="js-linkedin-icon"
+                                target="_blank">                   <div                     class="icon fab fa-linkedin-in"                     style="color:#114e4e"                   ></div>                 </a> 
                             </li>
-                            <li class="media-icon"> <a class="js-github-icon" class="" href="" alt="Github" title="Go to Github">                   <div class="fab fa-github-alt" style="color:#114e4e"></div>                 </a> 
+                            <li class="media-icon"> <a class="js-github-icon" class="" href="" alt="Github" title="Go to Github"
+                                target="_blank">                   <div                     class="icon fab fa-github-alt"                     style="color:#114e4e"                   ></div>                 </a> 
                             </li>
                         </ul>
                     </nav>
@@ -45,13 +47,13 @@
             </div>
             <section class="section-page">
                 <div class="section-page__design">
-                    <header class="section-page__header">
+                    <header class="section-page__header collapsable-header">
                          <h2 class="section-page__header__title">     <i class="far fa-object-ungroup" style="color:#e17334;"></i>     diseña   </h2> 
-                        <button type="button" class="section-page__header__btn"><i class="fas fa-chevron-down"></i>
+                        <button type="button" class="section-page__header__btn collapsable-btn"><i class="fas fa-chevron-down"></i>
 
                         </button>
                     </header>
-                    <div class="section-page__design__colors">
+                    <div class="section-page__design__colors collapsable-content">
                          <h3 class="section-page__design__colors__subtitle">         colores       </h3> 
                         <form action="" method="GET" id="select-color" class="section-page__design__colors__form">
                             <label for="colors" class="section-page__design__colors__form__palette01">
@@ -85,14 +87,14 @@
                     </div>
                 </div>
                 <!-- SECTION RELLENA -->
-                <div class="section-page__fill">
-                    <header class="section-page__header">
+                <div class="section-page__fill collapsable-close">
+                    <header class="section-page__header collapsable-header">
                          <h2 class="section-page__header__title">     <i class="far fa-keyboard" style="color:#e17334;"></i>     rellena   </h2> 
-                        <button type="button" class="section-page__header__btn"><i class="fas fa-chevron-down"></i>
+                        <button type="button" class="section-page__header__btn collapsable-btn"><i class="fas fa-chevron-down"></i>
 
                         </button>
                     </header>
-                    <form action="" method="GET" id="info-user" class="section-page__fill__form">
+                    <form action="" method="GET" id="info-user" class="section-page__fill__form collapsable-content">
                         <label for="fullname">Nombre completo</label>
                         <input class="js-input-name" type="text" name="fullname"
                         id="fullname" placeholder="Ej: Sally Jill" required />
@@ -122,30 +124,26 @@
                     </form>
                 </div>
                 <!-- SHARE -->
-                <div class="section-page__share">
-                    <header class="section-page__header">
+                <div class="section-page__share collapsable-close">
+                    <header class="section-page__header collapsable-header">
                          <h2 class="section-page__header__title">     <i class="fas fa-share-alt" style="color:#e17334;"></i>     comparte   </h2> 
-                        <button type="button" class="section-page__header__btn"><i class="fas fa-chevron-down"></i>
+                        <button type="button" class="section-page__header__btn collapsable-btn"><i class="fas fa-chevron-down"></i>
 
                         </button>
                     </header>
-                    <form class="section-page__share__form">
+                    <form class="section-page__share__form collapsable-content">
                         <button type="submit">crear tarjeta</button>
                     </form>
                 </div>
                 <div class="section-page__card-create">
-                     <h3 class="section-page__card-create__title">La tarjeta ha sido creada</h3>  <a href="#" class="section-page__card-create__link-card" target="_blank">https://awesome-profile-card.com?id=A456DF0001</a> 
-                    <button
-                    type="submit" class="section-page__card-create__rrss-btn"> <i class="fab fa-twitter" style="font-size: 18px;"></i> Compartir en twitter</button>
+                     <h3 class="section-page__card-create__title">La tarjeta ha sido creada</h3>  <a href="#" class="section-page__card-create__link-card" target="_blank">https://awesome-profile-card.com?id=A456DF0001</a     >     <button type="submit" class="section-page__card-create__rrss-btn">       <i class="fab fa-twitter" style="font-size: 18px;"></i>       Compartir en twitter     </button>   </div> </section> 
+     </main>     
+<footer class="footer">
+    <hr class="footer__mark" noshade size="1px" ; /> <small class="footer__copy">Awesome profile-cards © 2020</small> 
+    <div class="footer__logo"> <a href="https://adalab.es/" title="Ir a Adalab" target="_blank">       <img src="./assets/images/logo-adalab.png" alt="Adalab" />     </a> 
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <hr class="footer__mark" noshade size="1px" ; /> <small class="footer__copy">Awesome profile-cards © 2020</small> 
-            <div class="footer__logo"> <a href="https://adalab.es/" title="Ir a Adalab" target="_blank">       <img src="./assets/images/logo-adalab.png" alt="Adalab" />     </a> 
-            </div>
-        </footer>
-        <script type="text/javascript" src="./assets/js/main.js"></script>
+                </footer>
+                <script type="text/javascript" src="./assets/js/main.js"></script>
     </body>
 
 </html>
