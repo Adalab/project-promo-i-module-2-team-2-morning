@@ -29,11 +29,6 @@
   text-transform: uppercase;
   border: 1px solid white;
   color: $textColor;
-  transition: background-color ease 0.3s;
-  &:hover {
-    background-color: $orange;
-    color: $white;
-  }
 }
 
 .showroom-card__texts {
@@ -70,10 +65,7 @@
 }
 
 .media-icon {
-  width: 32px;
-  height: 32px;
-  border: 2px solid $formBorder;
-  border-radius: 50px;
+  @include itemBordersDesign();
   display: flex;
   align-items: center;
   justify-content: center;
